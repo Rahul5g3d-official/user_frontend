@@ -1,0 +1,1 @@
+export const sizing = { icon: { sm: "1rem", md: "1.25rem", lg: "1.5rem" }, control: { sm: "2rem", md: "2.5rem", lg: "3rem" }, container: { sm: "40rem", md: "48rem", lg: "64rem", xl: "80rem" } } as const;

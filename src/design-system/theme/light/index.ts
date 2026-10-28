@@ -1,0 +1,1 @@
+export const lightTheme = { background: "#FFFFFF", surface: "#FAFAFA", surfaceElevated: "#FFFFFF", textPrimary: "#171717", textSecondary: "#525252", textMuted: "#737373", border: "#E5E5E5", borderStrong: "#D4D4D4", accent: "#C8F169" } as const;
