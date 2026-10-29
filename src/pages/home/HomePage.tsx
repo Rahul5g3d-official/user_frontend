@@ -128,21 +128,36 @@ export function HomePage() {
             </div>
             <div className="lg:text-right">
               <Text>{courses.description}</Text>
-              <AppLink className={`mt-6 ${buttonClassName("secondary", "md")}`} to={ROUTES.COURSES}>
-                {courses.action}<Icon name="arrow" />
+              <AppLink
+                className={`mt-6 ${buttonClassName("secondary", "md")}`}
+                to={ROUTES.COURSES}
+              >
+                {courses.action}
+                <Icon name="arrow" />
               </AppLink>
             </div>
           </div>
           <div className="mt-12 grid gap-4 md:grid-cols-3">
             {courses.items.map((course) => (
-              <AppLink className="group" key={course.slug} to={`/courses/${course.slug}`}>
-                <Card className="flex min-h-68 h-full flex-col border border-line p-6 transition group-hover:-translate-y-1 group-hover:shadow-lift" tone="surface">
+              <AppLink
+                className="group"
+                key={course.slug}
+                to={`/courses/${course.slug}`}
+              >
+                <Card
+                  className="flex min-h-68 h-full flex-col border border-line p-6 transition group-hover:-translate-y-1 group-hover:shadow-lift"
+                  tone="surface"
+                >
                   <Label>{course.category}</Label>
-                  <Heading className="mt-4" level={3}>{course.title}</Heading>
+                  <Heading className="mt-4" level={3}>
+                    {course.title}
+                  </Heading>
                   <Text className="mt-4">{course.description}</Text>
                   <div className="mt-auto flex items-center justify-between pt-7 text-xs font-extrabold text-muted">
                     <span>{course.duration}</span>
-                    <span className="grid size-10 place-items-center rounded-full border border-ink text-ink transition group-hover:bg-ink group-hover:text-surface"><Icon name="arrow" size={16} /></span>
+                    <span className="grid size-10 place-items-center rounded-full border border-ink text-ink transition group-hover:bg-ink group-hover:text-surface">
+                      <Icon name="arrow" size={16} />
+                    </span>
                   </div>
                 </Card>
               </AppLink>

@@ -1,13 +1,16 @@
 {
-  "name": "admin_frontend",
+  "name": "user-frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "typecheck": "tsc -b",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@types/react": "latest",
@@ -18,5 +21,10 @@
     "react-router-dom": "^7.18.4",
     "typescript": "latest",
     "vite": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "prettier": "^3.9.10",
+    "tailwindcss": "^4.3.3"
   }
 }

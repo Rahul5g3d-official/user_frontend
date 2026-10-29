@@ -1,7 +1,8 @@
 export const buttonVariants = {
   primary: "bg-ink text-surface hover:bg-ink/90",
   secondary: "bg-brand text-surface hover:bg-brand/90",
-  outline: "border border-ink bg-transparent text-ink hover:bg-ink hover:text-surface",
+  outline:
+    "border border-ink bg-transparent text-ink hover:bg-ink hover:text-surface",
   ghost: "bg-transparent text-ink hover:bg-ink/5",
   light: "bg-surface text-ink hover:bg-paper",
 } as const;

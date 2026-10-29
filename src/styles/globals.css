@@ -17,9 +17,21 @@
 }
 
 @layer base {
-  html { scroll-behavior: smooth; }
-  body { @apply min-w-80 bg-paper font-sans text-ink antialiased; }
-  a { @apply text-inherit no-underline; }
-  button, input, textarea { font: inherit; }
-  button { @apply cursor-pointer; }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply min-w-80 bg-paper font-sans text-ink antialiased;
+  }
+  a {
+    @apply text-inherit no-underline;
+  }
+  button,
+  input,
+  textarea {
+    font: inherit;
+  }
+  button {
+    @apply cursor-pointer;
+  }
 }

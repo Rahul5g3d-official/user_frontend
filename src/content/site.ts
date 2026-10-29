@@ -30,32 +30,28 @@ export const siteContent = {
       noteTwo: "Built for\nreal life.",
       ringText: "GROWTH · ACCESS · POSSIBILITY · ",
     },
-principles: [
-  "Growth for you",
-  "Progress with purpose",
-  "Better, together",
-],
-services: {
-  eyebrow: "Your journey, your growth",
-  title: "Everything starts with a step forward.",
-  description:
-    "Discover your potential, develop real-world skills, and explore opportunities to build the future you want.",
+    principles: ["Growth for you", "Progress with purpose", "Better, together"],
+    services: {
+      eyebrow: "Your journey, your growth",
+      title: "Everything starts with a step forward.",
+      description:
+        "Discover your potential, develop real-world skills, and explore opportunities to build the future you want.",
 
-  items: [
-    {
-      label: "Discover",
-      title: "Find your strengths and your direction.",
+      items: [
+        {
+          label: "Discover",
+          title: "Find your strengths and your direction.",
+        },
+        {
+          label: "Develop",
+          title: "Build skills, habits, and confidence that last.",
+        },
+        {
+          label: "Connect",
+          title: "Discover people and opportunities that help you grow.",
+        },
+      ],
     },
-    {
-      label: "Develop",
-      title: "Build skills, habits, and confidence that last.",
-    },
-    {
-      label: "Connect",
-      title: "Discover people and opportunities that help you grow.",
-    },
-  ],
-},
     approach: {
       eyebrow: "Progress, without the pressure",
       title: "Make room for your own version of success.",
@@ -191,34 +187,49 @@ services: {
         slug: "finding-your-direction",
         category: "Explore",
         title: "Finding your direction",
-        description: "Make sense of your strengths, interests and next possibilities.",
+        description:
+          "Make sense of your strengths, interests and next possibilities.",
         duration: "4 lessons",
         level: "Beginner",
         overview:
           "A practical starting point for identifying what matters to you and choosing a direction that feels achievable.",
-        outcomes: ["Recognise your strengths", "Explore possible paths", "Choose a useful next step"],
+        outcomes: [
+          "Recognise your strengths",
+          "Explore possible paths",
+          "Choose a useful next step",
+        ],
       },
       {
         slug: "skills-for-everyday-progress",
         category: "Develop",
         title: "Skills for everyday progress",
-        description: "Create habits and skills that support steady, meaningful growth.",
+        description:
+          "Create habits and skills that support steady, meaningful growth.",
         duration: "6 lessons",
         level: "Beginner",
         overview:
           "Learn approachable ways to build momentum, practise new skills and keep moving when life gets busy.",
-        outcomes: ["Set realistic goals", "Build supportive habits", "Track your progress"],
+        outcomes: [
+          "Set realistic goals",
+          "Build supportive habits",
+          "Track your progress",
+        ],
       },
       {
         slug: "connecting-to-opportunity",
         category: "Connect",
         title: "Connecting to opportunity",
-        description: "Find people, communities and opportunities that can help you grow.",
+        description:
+          "Find people, communities and opportunities that can help you grow.",
         duration: "5 lessons",
         level: "All levels",
         overview:
           "Discover practical ways to grow your network, ask for support and turn new connections into opportunity.",
-        outcomes: ["Map your support network", "Communicate with confidence", "Find relevant opportunities"],
+        outcomes: [
+          "Map your support network",
+          "Communicate with confidence",
+          "Find relevant opportunities",
+        ],
       },
     ],
   },

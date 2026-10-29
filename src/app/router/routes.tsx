@@ -16,11 +16,17 @@ import { ServicesPage } from "../../pages/services/ServicesPage";
 export type AppRoute = { path: RoutePath; element: ReactNode };
 
 export const appRoutes: AppRoute[] = [
-  { path: ROUTES.HOME, element: <HomePage /> }, { path: ROUTES.ABOUT, element: <AboutPage /> },
-  { path: ROUTES.SERVICES, element: <ServicesPage /> }, { path: ROUTES.APPROACH, element: <ApproachPage /> },
-  { path: ROUTES.COURSES, element: <CoursesPage /> }, { path: ROUTES.COURSE_DETAIL, element: <CourseDetailPage /> },
+  { path: ROUTES.HOME, element: <HomePage /> },
+  { path: ROUTES.ABOUT, element: <AboutPage /> },
+  { path: ROUTES.SERVICES, element: <ServicesPage /> },
+  { path: ROUTES.APPROACH, element: <ApproachPage /> },
+  { path: ROUTES.COURSES, element: <CoursesPage /> },
+  { path: ROUTES.COURSE_DETAIL, element: <CourseDetailPage /> },
   { path: ROUTES.LOGIN, element: <LoginPage /> },
-  { path: ROUTES.IMPACT, element: <ImpactPage /> }, { path: ROUTES.CAREERS, element: <CareersPage /> },
-  { path: ROUTES.CONTACT, element: <ContactPage /> }, { path: ROUTES.FAQ, element: <FaqPage /> },
-  { path: ROUTES.PRIVACY, element: <LegalPage kind="privacy" /> }, { path: ROUTES.TERMS, element: <LegalPage kind="terms" /> },
+  { path: ROUTES.IMPACT, element: <ImpactPage /> },
+  { path: ROUTES.CAREERS, element: <CareersPage /> },
+  { path: ROUTES.CONTACT, element: <ContactPage /> },
+  { path: ROUTES.FAQ, element: <FaqPage /> },
+  { path: ROUTES.PRIVACY, element: <LegalPage kind="privacy" /> },
+  { path: ROUTES.TERMS, element: <LegalPage kind="terms" /> },
 ];
