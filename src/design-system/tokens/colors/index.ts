@@ -1,5 +1,3 @@
 export const colors = {
-  neutral: { 0: "#FFFFFF", 50: "#FAFAFA", 100: "#F5F5F5", 200: "#E5E5E5", 300: "#D4D4D4", 400: "#A3A3A3", 500: "#737373", 600: "#525252", 700: "#404040", 800: "#262626", 900: "#171717", 950: "#0A0A0A" },
-  accent: { primary: "#C8F169", primaryHover: "#B5E34E" },
-  semantic: { success: "#16A34A", warning: "#D97706", error: "#DC2626", info: "#2563EB" },
+  semantic: { ink: "ink", paper: "paper", surface: "surface", muted: "muted", border: "line", brand: "brand", brandSoft: "brand-soft", tint: "tint" },
 } as const;

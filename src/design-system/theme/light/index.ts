@@ -1,1 +1,1 @@
-export const lightTheme = { background: "#FFFFFF", surface: "#FAFAFA", surfaceElevated: "#FFFFFF", textPrimary: "#171717", textSecondary: "#525252", textMuted: "#737373", border: "#E5E5E5", borderStrong: "#D4D4D4", accent: "#C8F169" } as const;
+export const lightTheme = { background: "paper", surface: "surface", surfaceElevated: "surface", textPrimary: "ink", textSecondary: "muted", textMuted: "muted", border: "line", borderStrong: "line", accent: "brand" } as const;

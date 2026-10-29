@@ -1,1 +1,1 @@
-export const APP_CONFIG = { name: "Admin Frontend", defaultLocale: "en", defaultTheme: "dark" } as const;
+export const APP_CONFIG = { defaultLocale: "en", defaultTheme: "light" } as const;

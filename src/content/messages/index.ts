@@ -1,1 +1,1 @@
-export const messages = { validation: { required: "This field is required.", invalidEmail: "Enter a valid email address." }, network: { offline: "Check your internet connection and try again.", serverError: "The server could not complete your request." } } as const;
+export const messages = {} as const;
