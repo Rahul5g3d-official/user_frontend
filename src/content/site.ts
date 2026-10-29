@@ -9,10 +9,11 @@ export const siteContent = {
     main: [
       { label: "About", to: ROUTES.ABOUT },
       { label: "Services", to: ROUTES.SERVICES },
+      { label: "Courses", to: ROUTES.COURSES },
       { label: "Our approach", to: ROUTES.APPROACH },
       { label: "Impact", to: ROUTES.IMPACT },
     ],
-    action: "Connect with us",
+    action: "Login",
     openMenu: "Open menu",
     closeMenu: "Close menu",
   },
@@ -178,6 +179,70 @@ services: {
         ],
       },
     ],
+  },
+  courses: {
+    eyebrow: "Learn at your pace",
+    title: "Courses for your next step.",
+    description:
+      "Build practical skills, confidence and momentum with learning designed for real life.",
+    action: "View all courses",
+    items: [
+      {
+        slug: "finding-your-direction",
+        category: "Explore",
+        title: "Finding your direction",
+        description: "Make sense of your strengths, interests and next possibilities.",
+        duration: "4 lessons",
+        level: "Beginner",
+        overview:
+          "A practical starting point for identifying what matters to you and choosing a direction that feels achievable.",
+        outcomes: ["Recognise your strengths", "Explore possible paths", "Choose a useful next step"],
+      },
+      {
+        slug: "skills-for-everyday-progress",
+        category: "Develop",
+        title: "Skills for everyday progress",
+        description: "Create habits and skills that support steady, meaningful growth.",
+        duration: "6 lessons",
+        level: "Beginner",
+        overview:
+          "Learn approachable ways to build momentum, practise new skills and keep moving when life gets busy.",
+        outcomes: ["Set realistic goals", "Build supportive habits", "Track your progress"],
+      },
+      {
+        slug: "connecting-to-opportunity",
+        category: "Connect",
+        title: "Connecting to opportunity",
+        description: "Find people, communities and opportunities that can help you grow.",
+        duration: "5 lessons",
+        level: "All levels",
+        overview:
+          "Discover practical ways to grow your network, ask for support and turn new connections into opportunity.",
+        outcomes: ["Map your support network", "Communicate with confidence", "Find relevant opportunities"],
+      },
+    ],
+  },
+  coursesPage: {
+    hero: {
+      eyebrow: "Courses",
+      title: "Learning that moves with you.",
+      description:
+        "Explore short, practical courses that help turn your goals into a next step.",
+    },
+    allCourses: "All courses",
+    startCourse: "View course",
+  },
+  login: {
+    hero: {
+      eyebrow: "Welcome back",
+      title: "Log in to continue growing.",
+      description:
+        "Sign in to continue your learning journey and keep track of your progress.",
+    },
+    emailLabel: "Email address",
+    passwordLabel: "Password",
+    action: "Log in",
+    note: "Login is not connected yet. This form is ready to be linked to your approved sign-in process.",
   },
   approachPage: {
     hero: {
