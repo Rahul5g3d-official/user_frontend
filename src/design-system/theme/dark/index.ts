@@ -1,1 +1,11 @@
-export const darkTheme = { background: "#0A0A0A", surface: "#171717", surfaceElevated: "#262626", textPrimary: "#FAFAFA", textSecondary: "#D4D4D4", textMuted: "#A3A3A3", border: "#333333", borderStrong: "#525252", accent: "#C8F169" } as const;
+export const darkTheme = {
+  background: "ink",
+  surface: "ink",
+  surfaceElevated: "ink",
+  textPrimary: "surface",
+  textSecondary: "paper",
+  textMuted: "paper",
+  border: "line",
+  borderStrong: "line",
+  accent: "brand",
+} as const;

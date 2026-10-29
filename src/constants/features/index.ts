@@ -1,1 +1,5 @@
-export const FEATURES = { dashboard: true, accountSettings: true, analytics: false } as const;
+export const FEATURES = {
+  dashboard: true,
+  accountSettings: true,
+  analytics: false,
+} as const;

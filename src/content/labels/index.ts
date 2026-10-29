@@ -1,1 +1,5 @@
-export const labels = { actions: { save: "Save", cancel: "Cancel", delete: "Delete", edit: "Edit", close: "Close", continue: "Continue", back: "Back", search: "Search" }, states: { loading: "Loading...", empty: "Nothing here yet.", success: "Changes saved successfully." } } as const;
+import { siteContent } from "../site";
+
+export const labels = {
+  states: { loading: siteContent.common.loading },
+} as const;

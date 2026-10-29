@@ -1,18 +1,13 @@
-import { copy } from "./content";
-import { APP_CONFIG } from "./constants";
+import { AppRouter } from "./app/router/AppRouter";
+import { BrowserRouter } from "react-router-dom";
+import { AuthProvider } from "./auth/AuthProvider";
 
-function App() {
+export default function App() {
   return (
-    <main className="app-shell">
-      <section className="hero" aria-labelledby="page-title">
-        <p className="eyebrow">{copy.home.eyebrow}</p>
-        <h1 id="page-title">{copy.home.title}</h1>
-        <p className="description">{copy.home.description}</p>
-        <button type="button">{copy.home.primaryAction}</button>
-        <p className="footer-note">{APP_CONFIG.name}</p>
-      </section>
-    </main>
+    <BrowserRouter>
+      <AuthProvider>
+        <AppRouter />
+      </AuthProvider>
+    </BrowserRouter>
   );
 }
-
-export default App;
