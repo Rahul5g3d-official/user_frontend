@@ -133,14 +133,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       );
       return;
     }
-    if (!code || authError || !returnedState) {
+    if (authError || !returnedState) {
       setState({
         loading: false,
         error: authError || "Sign-in could not be completed.",
       });
       return;
     }
-    completeCallback(code, returnedState).catch((error: unknown) =>
+    // `code` is guaranteed here because the no-callback branch returned above.
+    completeCallback(code!, returnedState).catch((error: unknown) =>
       setState({
         loading: false,
         error:

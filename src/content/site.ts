@@ -7,11 +7,10 @@ export const siteContent = {
   navigation: {
     ariaLabel: "Primary navigation",
     main: [
+      { label: "Courses", to: ROUTES.COURSES },
       { label: "About", to: ROUTES.ABOUT },
       { label: "Services", to: ROUTES.SERVICES },
-      { label: "Courses", to: ROUTES.COURSES },
-      { label: "Our approach", to: ROUTES.APPROACH },
-      { label: "Impact", to: ROUTES.IMPACT },
+      { label: "FAQ", to: ROUTES.FAQ },
     ],
     action: "Login",
     openMenu: "Open menu",
@@ -73,66 +72,85 @@ export const siteContent = {
       role: "Placeholder story — details to be confirmed",
     },
   },
-  about: {
-    hero: {
-      eyebrow: "About G4U",
-      title: "Growth deserves an open door.",
-      description:
-        "We are building a more accessible future for people ready to learn, contribute and move forward.",
-    },
-    story: {
-      eyebrow: "Our story",
-      title:
-        "Built around a simple belief: opportunity should feel within reach.",
-      paragraphs: [
-        "G4U—Growth for You—is a platform with a people-first point of view. We believe progress becomes more possible when information, support and connection are easier to find.",
-        "Our story, team details and milestones will be shared here as they are verified. Until then, this space explains the intention behind G4U: creating practical conditions for more people to grow.",
-      ],
-    },
-    vision: {
-      eyebrow: "Our vision",
-      title: "A world where you can see a way forward.",
-      description:
-        "A future-facing aspiration, to be refined with G4U’s leadership team.",
-    },
-    mission: {
-      eyebrow: "Our mission",
-      title: "Turn possibility into practical momentum.",
-      description:
-        "We bring together learning, guidance and connection in ways that respect each person’s context.",
-    },
-    values: {
-      eyebrow: "How we show up",
-      title: "The values that guide our work.",
-      items: [
-        {
-          title: "Accessible",
-          description:
-            "We design for clarity, inclusion and real-world constraints.",
-        },
-        {
-          title: "Human",
-          description:
-            "We start with lived experience and listen before we build.",
-        },
-        {
-          title: "Practical",
-          description: "We focus on progress people can put into motion.",
-        },
-        {
-          title: "Hopeful",
-          description:
-            "We make room for ambition without losing sight of today.",
-        },
-      ],
-    },
-    team: {
-      eyebrow: "Our people",
-      title: "A team profile belongs here.",
-      description:
-        "Team introductions and biographies are intentionally held as placeholders until approved information is available.",
-    },
+about: {
+  hero: {
+    eyebrow: "About G4U",
+    title: "Education shapes your knowledge. Growth shapes your future.",
+    description:
+      "G4U helps college students grow beyond academics through mentorship, communication, practical learning, and the skills to navigate life with confidence.",
   },
+
+  story: {
+    eyebrow: "Our story",
+    title:
+      "Because becoming capable matters as much as becoming qualified.",
+
+    paragraphs: [
+      "College is about more than earning a degree. It is a time to discover who you are, find your voice, build meaningful skills, and prepare for the opportunities and challenges ahead. Yet personal growth, communication, and practical life skills can be just as important as academic knowledge.",
+      "G4U — Growth for Everyone — is being built to help bridge that gap. Through mentorship, interactive classes, communication development, and opportunities to learn and improve, we aim to make personal growth more accessible to students, regardless of where they begin.",
+      "We believe everyone has room to grow, and everyone deserves the guidance, tools, and encouragement to take their next step. Our goal is to help students become more confident, capable, and prepared for life beyond the classroom.",
+    ],
+  },
+
+  vision: {
+    eyebrow: "Our vision",
+    title: "A generation that grows beyond its potential.",
+    description:
+      "A future where every student has the confidence, skills, guidance, and opportunities to shape their own path and build a life they are proud of.",
+  },
+
+  mission: {
+    eyebrow: "Our mission",
+    title: "Make personal growth a part of every student's journey.",
+    description:
+      "We bring together mentorship, communication training, practical classes, and opportunities for self-improvement to help students turn their potential into meaningful progress.",
+  },
+
+  values: {
+    eyebrow: "What we believe",
+    title: "The principles behind every step forward.",
+
+    items: [
+      {
+        title: "Growth for everyone",
+        description:
+          "Your starting point does not define your future. Everyone deserves the opportunity to learn, improve, and move forward.",
+      },
+      {
+        title: "Confidence through action",
+        description:
+          "Confidence grows when you practise, communicate, take initiative, and learn from experience.",
+      },
+      {
+        title: "Learning beyond textbooks",
+        description:
+          "Real growth includes communication, critical thinking, practical skills, self-awareness, and the ability to navigate everyday life.",
+      },
+      {
+        title: "Guidance that empowers",
+        description:
+          "The right mentor, a useful perspective, or a little encouragement can help you see possibilities and take your next step.",
+      },
+      {
+        title: "Progress over perfection",
+        description:
+          "Growth is not about having everything figured out. It is about showing up, learning consistently, and becoming better over time.",
+      },
+      {
+        title: "Better, together",
+        description:
+          "We believe people grow through shared knowledge, supportive communities, meaningful feedback, and opportunities to learn from one another.",
+      },
+    ],
+  },
+
+  team: {
+    eyebrow: "The people behind G4U",
+    title: "A shared belief in what students can become.",
+    description:
+      "G4U is being built around a simple purpose: helping students become more confident, capable, and ready for life. Team introductions and verified profiles will be added as they are finalized.",
+  },
+},
   services: {
     hero: {
       eyebrow: "Our services",
@@ -255,50 +273,55 @@ export const siteContent = {
     action: "Log in",
     note: "Login is not connected yet. This form is ready to be linked to your approved sign-in process.",
   },
-  approachPage: {
-    hero: {
-      eyebrow: "Our approach",
-      title: "One thoughtful step at a time.",
+approachPage: {
+  hero: {
+    eyebrow: "Your growth journey",
+    title: "Grow beyond your degree.",
+    description:
+      "Build confidence, improve communication, learn practical skills, and get the mentorship you need to move forward in college and life.",
+  },
+
+  steps: [
+    {
+      eyebrow: "Step 01",
+      title: "Discover the person you want to become.",
       description:
-        "G4U puts people at the centre of a simple, supportive growth process.",
+        "Understand your strengths, identify what you want to improve, and set meaningful goals for your personal, academic, and professional growth.",
     },
-    steps: [
+    {
+      eyebrow: "Step 02",
+      title: "Learn skills that change how you show up.",
+      description:
+        "Learn from mentors, strengthen your communication, and join practical classes that help you express yourself, think clearly, and build confidence.",
+    },
+    {
+      eyebrow: "Step 03",
+      title: "Turn learning into real progress.",
+      description:
+        "Put your skills into practice, learn from feedback, and develop habits that help you become more capable, independent, and ready for what comes next.",
+    },
+  ],
+
+  participate: {
+    eyebrow: "Your next step",
+    title: "Invest in the person you're becoming.",
+    description:
+      "Your college years are an opportunity to grow far beyond academics. G4U gives you ways to learn, find guidance, and keep improving—one step at a time.",
+
+    items: [
       {
-        eyebrow: "Step 01",
-        title: "Start with your reality.",
+        title: "Learn and improve",
         description:
-          "Everyone begins in a different place. We make space for current needs, strengths and ambitions.",
+          "Explore practical classes, develop communication skills, and build abilities that matter in everyday life and your future career.",
       },
       {
-        eyebrow: "Step 02",
-        title: "Choose a useful next move.",
+        title: "Get guidance and grow",
         description:
-          "Small, relevant actions can create clarity and build confidence over time.",
-      },
-      {
-        eyebrow: "Step 03",
-        title: "Keep the door open.",
-        description:
-          "Growth is not a straight line. We aim to make it easier to return, adjust and continue.",
+          "Learn from mentors, gain a fresh perspective, and move toward your goals with greater clarity and confidence.",
       },
     ],
-    participate: {
-      eyebrow: "Take part",
-      title: "Growth works better when it is shared.",
-      description:
-        "There are different ways to be part of G4U as the programme develops.",
-      items: [
-        {
-          title: "Learn",
-          description: "Explore practical resources and pathways.",
-        },
-        {
-          title: "Contribute",
-          description: "Share ideas, experience and feedback.",
-        },
-      ],
-    },
   },
+},
   impact: {
     hero: {
       eyebrow: "Our impact",
@@ -523,9 +546,15 @@ export const siteContent = {
     description: "A platform for practical, people-centred growth.",
     links: [
       { label: "Careers", to: ROUTES.CAREERS },
+      { label: "Contact", to: ROUTES.CONTACT },
+      { label: "About", to: ROUTES.ABOUT },
+      { label: "Services", to: ROUTES.SERVICES },
+      { label: "Our approach", to: ROUTES.APPROACH },
+      { label: "Impact", to: ROUTES.IMPACT },
       { label: "FAQ", to: ROUTES.FAQ },
       { label: "Privacy", to: ROUTES.PRIVACY },
       { label: "Terms", to: ROUTES.TERMS },
+
     ],
     copyright: "© 2026 G4U. All rights reserved.",
     placeholder: "Verified details to be added.",

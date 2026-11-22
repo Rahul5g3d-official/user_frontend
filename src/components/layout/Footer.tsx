@@ -3,6 +3,7 @@ import { siteContent } from "../../content/site";
 import { AppLink } from "../navigation/AppLink";
 import { BrandMark } from "../ui/BrandMark";
 
+
 export function Footer() {
   const c = siteContent.footer;
   return (
