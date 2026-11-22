@@ -140,7 +140,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       });
       return;
     }
-    completeCallback(code, returnedState).catch((error: unknown) =>
+    // `code` is guaranteed here because the no-callback branch returned above.
+    completeCallback(code!, returnedState).catch((error: unknown) =>
       setState({
         loading: false,
         error:

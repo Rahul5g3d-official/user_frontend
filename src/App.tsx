@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import type { FormEvent, ReactNode } from "react";
+import { isComingSoonMode } from "./config/site-mode";
+import { SiteMetadata } from "./components/seo/SiteMetadata";
+import { ComingSoonPage } from "./pages/coming-soon/ComingSoonPage";
 import { SITE } from "./constants/app";
 import { ROUTES, type RoutePath } from "./constants/routes";
 import { siteContent } from "./content/site";
@@ -703,6 +706,15 @@ function NotFound({ navigate }: { navigate: (to: string) => void }) {
   );
 }
 function App() {
+  if (isComingSoonMode) {
+    return (
+      <>
+        <SiteMetadata />
+        <ComingSoonPage />
+      </>
+    );
+  }
+
   const { path, navigate } = useLocation();
   const pages: Partial<Record<RoutePath, ReactNode>> = {
     [ROUTES.HOME]: <Home navigate={navigate} />,
@@ -718,6 +730,7 @@ function App() {
   };
   return (
     <>
+      <SiteMetadata />
       <Header navigate={navigate} />
       <main>
         {pages[path as RoutePath] ?? <NotFound navigate={navigate} />}
