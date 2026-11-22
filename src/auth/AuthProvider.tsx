@@ -133,7 +133,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       );
       return;
     }
-    if (!code || authError || !returnedState) {
+    if (authError || !returnedState) {
       setState({
         loading: false,
         error: authError || "Sign-in could not be completed.",
